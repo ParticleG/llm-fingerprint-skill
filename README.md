@@ -1,6 +1,6 @@
 # LLM Fingerprint Skill
 
-A Claude Code / OpenCode skill for identifying and verifying AI model identity.
+A skill for identifying and verifying AI model identity through multi-stage behavioral analysis. Works with omp, Claude Code, and any agent that discovers `~/.agents/skills/`.
 
 ## Features
 
@@ -13,15 +13,19 @@ A Claude Code / OpenCode skill for identifying and verifying AI model identity.
 ## Installation
 
 ```bash
-# Clone to your skills directory
-git clone https://github.com/YOUR_USERNAME/llm-fingerprint-skill ~/.config/opencode/skills/fingerprint
+bunx skills add ParticleG/llm-fingerprint-skill
 ```
 
-Or manually copy `SKILL.md` to your Claude Code / OpenCode skills directory.
+Or manually:
+
+```bash
+git clone https://github.com/ParticleG/llm-fingerprint-skill ~/.agents/skills/fingerprint
+```
 
 ## Usage
 
 Trigger phrases:
+
 - "identify this model"
 - "fingerprint the AI"
 - "verify model identity"
@@ -31,6 +35,7 @@ Trigger phrases:
 ## Based on Research
 
 This skill incorporates techniques from recent academic papers:
+
 - Hide and Seek (arXiv:2408.02871)
 - RoFL (arXiv:2505.12682)
 - TRAP (arXiv:2402.12991)
